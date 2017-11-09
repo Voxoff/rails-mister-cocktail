@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Quantity: 
+  cocktail: one
+  ingredient: one
+
+two:
+  Quantity: 
+  cocktail: two
+  ingredient: two
