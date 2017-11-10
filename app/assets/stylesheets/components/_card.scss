@@ -1,41 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Rye|Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Rye');
 
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --sapphire: #c2eef8;
-  --headerblue: #013876;
-  --black: #313131;
-}
 body {
-  background: var(--sapphire);
   background-image: url('https://images.unsplash.com/photo-1484132368430-ca5c967b425b?auto=format&fit=crop&w=1600&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
   background-size: cover;
-  background-attachment: fixed;
-  font-family: 'Merriweather', serif;
-  color: var(--headerblue);
 }
-.appContainer {
-  max-width: 900px;
-  margin: 30px auto;
 
-}
-.drinkContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  grid-auto-flow: dense;
-  grid-gap: 15px;
-  padding-top: 20px;
-}
-h1 {
-  text-shadow: 0px 5px 25px var(--black);
-}
-h1,h2 {
+h1{
   font-family: 'Rye', cursive;
   text-transform: uppercase;
-  text-align: center;
   font-size: 50px;
   margin: 20px 0 0;
   display: grid;
@@ -43,136 +15,12 @@ h1,h2 {
   grid-gap: 20px;
   align-items: center;
   color: #fff;
+  // already done in bootstrap but anyway
+  font-weight: 500;
+  line-height: 1.1;
 }
-h1:before, h1:after, h2:before, h2:after {
+h1:before, h1:after, {
   background: #fff;
-  display: block;
-  height: 2px;
-  width: 100%;
+  height: 3px;
   content: '';
-}
-h2 {
- color: var(--headerblue);
- font-size: 30px;
-  &:before, &:after {
-    background: var(--headerblue);
-  }
-}
-figcaption{
-  text-align: center;
-  padding: 10px 0;
-  background: #fff;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-figure img {
-  border: 5px solid #fff;
-}
-
-.drink img, .modal img {
-  width: 100%;
-  height: auto;
-}
-
-.drink {
-  position: relative;
-  border: 1px solid var(--headerblue);
-  font-size: 0;
-    &:before, &:after {
-    transition: .3s opacity ease;
-    opacity: 0;
-    cursor: pointer;
-  }
-  &:after {
-    content: 'ℹ︎';
-    font-size: 80px;
-    border-bottom: 10px solid #fff;
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    color: #fff;
-    left: 50%;
-    top: 45%;
-    display: block;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    background: rgba(#222, 0.5);
-    display: block;
-  }
-  &:hover {
-    &:before, &:after {
-      opacity: 1;
-      transition: .3s opacity ease;
-    }
-  }
-}
-
-.modal {
-  position: fixed;
-  z-index: 999;
-  width: 60%;
-  max-width: 800px;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  background: #fff;
-}
-
-.modal-close {
-  text-decoration: none;
-  background-color: var(--headerblue);
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 27px;
-  position: absolute;
-  right: 6px;
-  top: 6px;
-  font-size: 22px;
-}
-
-.modal-overlay {
-  position: fixed;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-}
-.modal-body {
-  display: grid;
-  padding: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  align-items: center;
-  border: 3px solid var(--headerblue);
-}
-
-.modal-text {
-  padding: 10px;
-  h2 {
-    padding-bottom: 10px;
-  }
-  ul {
-    padding-left: 20px;
-  }
-  li {
-    line-height: 20px;
-    list-style-type: disc;
-
-  }
-  p {
-    line-height: 20px;
-    display: inline-block;
-  }
-  strong {
-    display: inline-block;
-    font-weight: bolder;
-    margin: 10px 0;
-    border-bottom: 1px solid var(--headerblue);
-  }
 }
