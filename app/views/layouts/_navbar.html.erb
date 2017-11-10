@@ -1,0 +1,29 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <div class="navbar-wagon-brand">
+    <div class="wrapper-logo">
+      <%= render "layouts/logo" %>
+    </div>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Drinks</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Bookings</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Recipes</a>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <%= image_tag("sheen.jpeg", class: "avatar dropdown-toggle", id: "navbar-wagon-menu") %>
+        <!-- <img src="../assets/images/sheen.jpeg" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown"> -->
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
