@@ -11,12 +11,11 @@
 # Dose.create(cocktail_id: mojito.id, Quantity: 2, description: "2 Shots", ingredient_id: rum.id)
 
 
-###Now lets' automate
+#Now lets' automate
 require 'open-uri'
-require 'json'
 
-url ="http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+url ="https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin"
 data = JSON.parse(open(url).read)
 data["drinks"].each do |hash|
-  Ingredient.create(name: hash.values[0])
+  Cocktail.create(name: hash["strDrink"], img_url: hash["strDrinkThumb"])
 end
