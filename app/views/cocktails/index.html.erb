@@ -27,7 +27,7 @@
       <% @cocktails.each_with_index do |cocktail, i| %>
         <div class="col-xs-6 col-md-4">
           <div class="queen">
-              <%= image_tag("queen.png") %>
+              <%= image_tag("queen.png", class: "nonsense")%>
             <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cocktail.img_url %>)">
               <!-- <h3 id="card_img<%= i + 1 %>"><%= cocktail.name %></h3> -->
               <h3 class="invert"><%= cocktail.name %></h3>
