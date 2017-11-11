@@ -1,23 +1,41 @@
 .card{
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
+  width: 218px;
+  height: 316px;
   box-shadow: 4px 4px rgba(0,0,0,0.4);
   background-size: cover;
   margin: 20px;
   text-align: center;
   line-height: 300px;
+  color: white;
+  position: relative;
+  bottom: 388px;
+  right: -31px;
+  opacity: 0.9;
 }
 
 .card h3{
-  mix-blend-mode: darken;
   font-weight:800;
   vertical-align: middle;
   line-height: normal;
-  // vertical-align: center;
-  // line-height: 50px;
+  text-shadow: 2px 1px black;
 }
 
-// @for $i from 1 through 84
-//   .#{$color}-#{$i}
-//     mix-blend-mode: darken;
+.queen{
+  position: relative;
+}
+
+.queen img{
+  height: 400px;
+  width: 330px;
+  border-radius:20px;
+}
+// .queen {
+//   background-image: url('images/burntqueen.png');
+// }
+// @for $i from 1 through 84 {
+//   #card_img#{$i} {
+//     color: inherit;
+//     filter: invert(100%) !important;
+//     // background-blend-mode: color-dodge;
+//   }
+// }

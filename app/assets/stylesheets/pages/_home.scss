@@ -1,6 +1,9 @@
 // Specific CSS for your home-page
 
-body { margin: 0;}
+body {
+ margin: 0;
+ background-color: rgba(0,0,0,0.9);
+}
 
 .image {
   background-image: url('https://images.unsplash.com/photo-1484132368430-ca5c967b425b?auto=format&fit=crop&w=1600&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
@@ -8,6 +11,7 @@ body { margin: 0;}
   width: 100vw;
   height: calc(100vh - 70px);
   max-width: 100%;
+  margin-bottom: 400px;
 }
 
 h1{
